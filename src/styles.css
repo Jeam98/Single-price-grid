@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --LightGrayo: hsla(204, 43%, 93%, 0.5);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+* {
+  font-family: "Karla", sans-serif;
+}
+section {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--LightGray);
+}
+.card {
+  display: grid;
+  margin: 2em;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.preview {
+  display: grid;
+  background-color: white;
+  padding: 1.5em 1em;
+  gap: 1.5rem;
+}
+.plan {
+  display: grid;
+  background-color: var(--Cyan);
+  padding: 1.5em 1em;
+  gap: 1.5em;
+}
+.reasons {
+  display: grid;
+  background-color: #40c1bc;
+  padding: 1.5em 1em;
+  gap: 1em;
+}
+h1 {
+  color: var(--Cyan);
+  font-weight: 700;
+  font-size: 20px;
+}
+h2 {
+  color: var(--BrightYellow);
+  font-weight: 700;
+  font-size: 20px;
+}
+.preview p {
+  color: var(--GrayishBlue);
+  line-height: 1.5em;
+}
+h3 {
+  color: var(--LightGray);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.plan p {
+  color: var(--LightGray);
+  font-size: 18px;
+}
+button {
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--BrightYellow);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.reasons p {
+  color: var(--LightGray);
+  line-height: 1.5em;
+}
+#dollar {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+#month {
+  color: var(--LightGrayo);
+  font-size: 20px;
+}
+.price p {
+  display: flex;
+  align-items: center;
+  line-height: 2.5rem;
+  gap: 0.5rem;
+}
+@media (min-width: 600px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 700px;
+  }
+  .preview {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    line-height: 1em;
+    padding: 3em;
+  }
+  .preview p {
+    width: 550px;
+  }
+  .plan {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 2em;
+  }
+  .reasons {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 2em;
+  }
+}
